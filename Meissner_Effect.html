@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meisssner Effect</title>
+    <style>
+      body {
+        background-color: #f0f0f0; /* Light Gray */
+        color: #333;
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        box-sizing: border-box;
+        font-size: 18px;
+        line-height: 1.6;
+      }
+
+      h1 {
+        color: #007bff; /* Light Blue */
+        margin-bottom: 40px;
+        font-size: 48px;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+      }
+
+      p {
+        background-color: #ffffff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+        font-size: 18px;
+        text-align: justify;
+      }
+
+      figure {
+        margin: 20px 0;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      figcaption {
+        color: #666;
+        font-style: italic;
+        padding: 10px;
+        background-color: #f9f9f9;
+        text-align: center;
+      }
+
+      img {
+        display: block;
+        width: 100;
+        height: 100;
+      }
+
+      iframe {
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        max-width: 600px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Meissner Effect</h1>
+
+    <p>
+      Meissner effect It was observed by Meissner and Ochsenfeld that, when a
+      superconductor is cooled below its critical temperature (Tc), it undergoes
+      a phase transition and enters a superconducting state. In this state, the
+      superconductor exhibits perfect diamagnetism, meaning it repels any
+      external magnetic field from its interior. This expulsion of magnetic flux
+      is a characteristic feature of the Meissner effect. In a perfect
+      diamagnetic material, we know that: B = μ₀(H + M) where, B represents the
+      magnetic induction, H the magnetic field intensity, M the magnetization
+      vector and μ₀ the permittivity of free space. We can express magnetization
+      vector M (M = magnetic dipole moment per unit volume) in the following
+      form, for linear medium: M = χH χ is +ve for paramagnetic like Aluminum,
+      Platinum and -ve for diamagnetic like gold, silver, copper. Where, χ is
+      the magnetic susceptibility. Substituting the value of magnetization
+      vector M in the equation, one gets the following expression: B = μ₀(H + M)
+      = μ₀(H + χH) = μ₀(1 + χ)H As we have observed for a superconducting
+      sample, the magnetic field is zero inside the specimen, that is, 0 = μ₀(1
+      + χ)H
+    </p>
+
+    <figure>
+      <img src="images/extra/x4.jpg" alt="Figure 1: Meissner Effect" />
+      <figcaption>Figure 1: Meissner Effect</figcaption>
+    </figure>
+
+    <p>
+      When an external magnetic field is applied to a superconductor, the
+      magnetic flux tends to penetrate the material. However, the Cooper pairs
+      actively respond to the magnetic field by forming currents that generate
+      an opposing magnetic field. These induced currents create a magnetic field
+      that perfectly cancels out the external magnetic field within the bulk of
+      the superconductor. As a result, the magnetic field is expelled from the
+      interior of the superconductor, confining it to the exterior regions as
+      shown in figure 2. It's important to note that the Meissner effect is only
+      observed in type I superconductors, which have a single critical
+      temperature and exhibit a complete expulsion of the magnetic field. Type
+      II superconductors, on the other hand, exhibit a mixed state where
+      magnetic flux penetrates the material in the form of quantized vortices.
+      In type II superconductors, the Meissner effect is limited to the region
+      between these vortices
+    </p>
+    <figure>
+      <img src="images/extra/x3.jpg" alt="Figure 2: Leviation" />
+      <figcaption>Figure 2: Levitation</figcaption>
+    </figure>
+
+    <p>Below is the a short animation video for your better understanding.</p>
+
+    <!-- Updated YouTube link -->
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/NVeAmKUbXvA?si=J4WE5yrm5DJh1Lb6"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+    ></iframe>
+  </body>
+</html>

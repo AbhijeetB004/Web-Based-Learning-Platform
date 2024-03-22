@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="shortcut icon" type="png" href="images/icon/favicon.png" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Comaptible" content="IE=edge" />
+    <title>BCS THEORY</title>
+    <meta name="desciption" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script type="text/javascript" src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <script>
+      $(window).on("scroll", function () {
+        if ($(window).scrollTop()) {
+          $("nav").addClass("black");
+        } else {
+          $("nav").removeClass("black");
+        }
+      });
+    </script>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <header id="header" style="background-color: #f8f9fa; padding: 20px">
+      <nav
+        style="
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        "
+      >
+        <div class="logo" style="margin-right: auto">
+          <img
+            src="images/icon/logo.jpg"
+            alt="logo"
+            style="height: 100px; width: 100px; border-radius: 50%"
+          />
+        </div>
+        <ul style="display: flex; list-style-type: none; margin: 0; padding: 0">
+          <li>
+            <a
+              class="active"
+              href=""
+              style="text-decoration: none; color: #333; margin: 0 10px"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="#portfolio_section"
+              style="text-decoration: none; color: #333; margin: 0 10px"
+              >Courses</a
+            >
+          </li>
+          <li>
+            <a
+              href="#team_section"
+              style="text-decoration: none; color: #333; margin: 0 10px"
+              >Quiz</a
+            >
+          </li>
+          <li>
+            <a
+              href="#services_section"
+              style="text-decoration: none; color: #333; margin: 0 10px"
+              >Discussion</a
+            >
+          </li>
+          <li>
+            <a
+              href="#contactus_section"
+              style="text-decoration: none; color: #333; margin: 0 10px"
+              >Contact</a
+            >
+          </li>
+        </ul>
+
+        <img
+          src="images/icon/menu.png"
+          class="menu"
+          onclick="sideMenu(0)"
+          alt="menu"
+          style="height: 30px; width: 30px; cursor: pointer"
+        />
+      </nav>
+      <div
+        class="head-container"
+        style="
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        "
+      >
+        <div class="quote" style="flex: 1; padding: 20px">
+          <p style="font-size: 25px; color: #1a2c75">
+            Physics, the fundamental science, underpins our understanding of the
+            universe, from the smallest particles to the vast cosmos. Its
+            importance lies in shaping technology, advancing medicine, and
+            addressing pressing global challenges.
+          </p>
+          <h4 style="font-size: 25px; color: #17e339">
+            -------------------QUOTES--------------------
+          </h4>
+          <h5 style="font-size: 16px; color: #c45420e9">
+            "The most incomprehensible thing about the world is that it is
+            comprehensible." - Albert Einstein
+          </h5>
+          <h5 style="font-size: 16px; color: #c45420e9">
+            "Science is a way of thinking much more than it is a body of
+            knowledge." - Carl Sagan
+          
+        </div>
+        <div class="svg-image" style="flex: 1">
+          <img src="images/extra/Physics.jpg" alt="svg" style="width: 100%" />
+        </div>
+      </div>
+    </header>
+
+    <div class="diffSection" id="about_section">
+      <center>
+        <p
+          style="
+            font-size: 50px;
+            padding: 100px;
+            color: #0066ff;
+            animation: pulse 2s infinite;
+          "
+        >
+          <span
+            style="
+              font-family: 'Arial Black', sans-serif;
+              font-weight: bold;
+              text-transform: uppercase;
+            "
+          >
+            About
+          </span>
+        </p>
+      </center>
+      <div
+        class="about-content"
+        style="
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+        "
+      >
+        <div class="side-image">
+          <img
+            class="sideImage"
+            src="images/extra/x10.jpg"
+            style="
+              border-radius: 10px;
+              border: 5px solid #ff9900;
+              box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+              width: 500px;
+              height: 500px;
+              object-fit: cover;
+            "
+          />
+        </div>
+        <div class="side-text">
+          <h2
+            style="
+              color: rgba(70, 0, 0, 0.849);
+              font-family: 'Times New Roman', serif;
+            "
+          >
+            What do you think <br />
+            about BCS Theory?
+          </h2>
+          <p
+            style="color: #333; font-size: 18px; font-family: 'Georgia', serif"
+          >
+            The BCS theory, named after its developers John Bardeen, Leon
+            Cooper, and Robert Schrieffer, is a fundamental theory in condensed
+            matter physics that explains the phenomenon of superconductivity.
+            Proposed in 1957, the BCS theory provides a microscopic explanation
+            for how certain materials can conduct electricity with zero
+            resistance at low temperatures. At the heart of the BCS theory is
+            the concept of Cooper pairs, which are pairs of electrons that form
+            a bound state due to interactions with the crystal lattice
+            vibrations, known as phonons. These phonon-mediated interactions
+            overcome the usual repulsive forces between electrons, allowing them
+            to form pairs with a net attraction. This pairing mechanism explains
+            why superconductivity typically occurs at low temperatures, where
+            the lattice vibrations are minimized, facilitating the formation of
+            Cooper pairs.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- PORTFOLIO -->
+    <div class="diffSection" id="portfolio_section">
+      <center>
+        <p
+          style="
+            font-size: 50px;
+            padding: 100px;
+            color: #0066ff;
+            animation: pulse 2s infinite;
+          "
+        >
+          <span
+            style="
+              font-family: 'Arial Black', sans-serif;
+              font-weight: bold;
+              text-transform: uppercase;
+            "
+          >
+            Courses
+          </span>
+        </p>
+      </center>
+      <div class="content"></div>
+    </div>
+    <div class="extra">
+      <p style="
+      font-size: 50px;
+      padding: 100px;
+      color: #ff0000;
+      animation: pulse 2s infinite;
+    ">Here are our courses in the BCS Theory</p>
+      <div class="smbox">
+        <span
+          ><center>
+            <div id="Fundamentals" class="data">Fundamentals</div>
+            <div class="det">
+              Essential Foundations for understanding Super Conductivity
+            </div>
+          </center></span
+        >
+        <span
+          ><center>
+            <div id="Meissner_Effect" class="data">Meissner Effect</div>
+            <div class="det">
+              Unlocking the mysteries of magnetic phenomenon in Super Conductors
+            </div>
+          </center></span
+        >
+        <span
+          ><center>
+            <div id="BCS_Theory" class="data">BCS theory</div>
+            <div class="det">Unveiling the mechanism of Super Conductivity</div>
+          </center></span
+        >
+        <span
+          ><center>
+            <div id="Squid" class="data">Animated Videos</div>
+            <div class="det"></div>
+          </center></span
+        >
+      </div>
+    </div>
+
+    <!-- TEAM -->
+    <div class="diffSection" id="team_section">
+      <center>
+        <p
+          style="
+            font-size: 40px;
+            padding: 100px;
+            color: #0066ff;
+            animation: pulse 2s infinite;
+          "
+        >
+          <span
+            style="
+              font-family: 'Arial Black', sans-serif;
+              font-weight: bold;
+              text-transform: uppercase;
+            "
+          >
+            QUIZ FOR TESTING YOUR KNOWLEDGE
+          </span>
+        </p>
+      </center>
+      <div class="totalcard">
+        <div id="quiz1" class="card">
+          <center><img src="images/extra/x11.jpg" /></center>
+          <center>
+            <div class="card-title">TAKE QUIZ</div>
+            <div id="detail">
+              <div class="duty"></div>
+            </div>
+          </center>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="diffSection"
+      id="services_section"
+      style="
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      "
+    >
+      <!-- Add Discord and Reddit links -->
+      <div style="text-align: center">
+        <center>
+          <p
+            style="
+              font-size: 50px;
+              padding: 100px;
+              color: #0066ff;
+              animation: pulse 2s infinite;
+            "
+          >
+            <span
+              style="
+                font-family: 'Arial Black', sans-serif;
+                font-weight: bold;
+                text-transform: uppercase;
+              "
+            >
+              DISCUSSION
+            </span>
+          </p>
+        </center>
+        <a
+          href="https://discord.gg/QZjpMSfZ"
+          target="_blank"
+          style="
+            margin-right: 300px;
+            color: #7289da;
+            text-decoration: none;
+            font-weight: bold;
+          "
+          >Discord</a
+        >
+        <span style="margin: 0 50px; color: #333"></span>
+        <a
+          href="https://www.reddit.com/r/t5_azqvny/s/A85LBJTI7l"
+          target="_blank"
+          style="
+            margin-left: 100px;
+            color: #ff4500;
+            text-decoration: none;
+            font-weight: bold;
+          "
+          >Reddit</a
+        >
+      </div>
+    </div>
+
+    <!-- CONTACT US -->
+    <div class="diffSection" id="contactus_section">
+      <center>
+        <p
+          style="
+            font-size: 50px;
+            padding: 100px;
+            color: #0066ff;
+            animation: pulse 2s infinite;
+          "
+        >
+          <span
+            style="
+              font-family: 'Arial Black', sans-serif;
+              font-weight: bold;
+              text-transform: uppercase;
+            "
+          >
+            CONTACT US
+          </span>
+        </p>
+      </center>
+      <div class="csec"></div>
+      <div class="back-contact">
+        <div class="cc">
+          <form
+            action="mailto:rishikeshreddy887@gmail.com"
+            method="post"
+            enctype="text/plain"
+          >
+            <label>First Name <span class="imp">*</span></label
+            ><label style="margin-left: 185px"
+              >Last Name <span class="imp">*</span></label
+            ><br />
+            <center>
+              <input
+                type="text"
+                name=""
+                style="margin-right: 10px; width: 175px"
+                required="required"
+              /><input
+                type="text"
+                name="lname"
+                style="width: 175px"
+                required="required"
+              /><br />
+            </center>
+            <label>Email <span class="imp">*</span></label
+            ><br />
+            <input
+              type="email"
+              name="mail"
+              style="width: 100%"
+              required="required"
+            /><br />
+            <label>Message <span class="imp">*</span></label
+            ><br />
+            <input
+              type="text"
+              name="message"
+              style="width: 100%"
+              required="required"
+            /><br />
+            <label>Additional Details</label><br />
+            <textarea name="addtional"></textarea><br />
+            <button type="submit" id="csubmit">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- FEEDBACK -->
+
+    <!-- Sliding Information -->
+    <center>
+      <p
+        style="
+          font-size: 50px;
+          padding: 100px;
+          color: #0066ff;
+          animation: pulse 2s infinite;
+        "
+      >
+        <span
+          style="
+            font-family: 'Arial Black', sans-serif;
+            font-weight: bold;
+            text-transform: uppercase;
+          "
+        >
+          CHAT BOT
+        </span>
+      </p>
+    </center>
+    <div class="chatbot-icon">
+      <a href="#" class="chatbot-trigger"
+        ><img src="images\extra\chatbot.png" alt="Chatbot"
+      /></a>
+    </div>
+    <div class="chatbot-icon">
+      <a href="#" class="chatbot-trigger"
+        ><img src="images\extra\chatbot.png" alt="Chatbot"
+      /></a>
+    </div>
+    <div class="chatbot-icon">
+      <a href="#" class="chatbot-trigger"
+        ><img src="images\extra\chatbot.png" alt="Chatbot"
+      /></a>
+    </div>
+    <div class="chatbot-icon">
+      <a href="#" class="chatbot-trigger"
+        ><img src="images\extra\chatbot.png" alt="Chatbot"
+      /></a>
+    </div>
+    <div class="chatbot-icon">
+      <a href="#" class="chatbot-trigger"
+        ><img src="images\extra\chatbot.png" alt="Chatbot"
+      /></a>
+    </div>
+    <div class="chatbot-icon">
+      <a href="#" class="chatbot-trigger"
+        ><img src="images\extra\chatbot.png" alt="Chatbot"
+      /></a>
+    </div>
+
+    <iframe
+      src="https://www.chatbase.co/chatbot-iframe/g39uKJexci-Haq1burk7K"
+      title="Chatbot"
+      width="100%"
+      style="height: 100%; min-height: 700px"
+      frameborder="0"
+    ></iframe>
+    <div class="chatbot-icon">
+      <a href="#" class="chatbot-trigger"
+        ><img src="images\extra\chatbot.png" alt="Chatbot"
+      /></a>
+    </div>
+    <div class="chatbot-icon">
+      <a href="#" class="chatbot-trigger"
+        ><img src="images\extra\chatbot.png" alt="Chatbot"
+      /></a>
+    </div>
+    <div class="chatbot-icon">
+      <a href="#" class="chatbot-trigger"
+        ><img src="images\extra\chatbot.png" alt="Chatbot"
+      /></a>
+    </div>
+    <div class="chatbot-icon">
+      <a href="#" class="chatbot-trigger"
+        ><img src="images\extra\chatbot.png" alt="Chatbot"
+      /></a>
+    </div>
+    <div class="chatbot-icon">
+      <a href="#" class="chatbot-trigger"
+        ><img src="images\extra\chatbot.png" alt="Chatbot"
+      /></a>
+    </div>
+    <div class="chatbot-icon">
+      <a href="#" class="chatbot-trigger"
+        ><img src="images\extra\chatbot.png" alt="Chatbot"
+      /></a>
+    </div>
+
+    
+    <marquee
+      style="
+        background: linear-gradient(to right, #fa4b37, #df2771);
+        margin-top: 50px;
+      "
+      direction="left"
+      onmouseover="this.stop()"
+      onmouseout="this.start()"
+      scrollamount="20"
+      ><div class="marqu">
+        "BCS theory: electrons dance in pairs, conducting without resistance.||
+        "Superconductivity: electrons team up, follow BCS's lead." ||"BCS
+        theory:electrons pair up, superconductivity emerges."
+      </div></marquee
+    >
+
+    <div class="title2" id="feedBACK">
+      <span>Give Feedback</span>
+      <div class="shortdesc2">
+        <p>Please share your valuable feedback to us</p>
+      </div>
+    </div>
+
+    <div class="feedbox">
+      <div class="feed">
+        <form
+          action="mailto:rishikeshreddy887@gmail.com"
+          method="post"
+          enctype="text/plain"
+        >
+          <label>Your Name</label><br />
+          <input type="text" name="" class="fname" required="required" /><br />
+          <label>Email</label><br />
+          <input type="email" name="mail" required="required" /><br />
+          <label>Additional Details</label><br />
+          <textarea name="addtional"></textarea><br />
+          <button type="submit" id="csubmit">Send Message</button>
+        </form>
+      </div>
+    </div>
+    <header id="header" style="background-color: #f8f9fa; padding: 20px">
+      <nav
+        style="
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        "
+      >
+        <div class="logo" style="margin-right: auto">
+          <img
+            src="images/icon/logo.jpg"
+            alt="logo"
+            style="height: 100px; width: 100px; border-radius: 50%"
+          />
+        </div>
+        <ul style="display: flex; list-style-type: none; margin: 0; padding: 0">
+          <li>
+            <a
+              class="active"
+              href=""
+              style="text-decoration: none; color: #333; margin: 0 10px"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="#portfolio_section"
+              style="text-decoration: none; color: #333; margin: 0 10px"
+              >Courses</a
+            >
+          </li>
+          <li>
+            <a
+              href="#team_section"
+              style="text-decoration: none; color: #333; margin: 0 10px"
+              >Quiz</a
+            >
+          </li>
+          <li>
+            <a
+              href="#services_section"
+              style="text-decoration: none; color: #333; margin: 0 10px"
+              >Discussion</a
+            >
+          </li>
+          <li>
+            <a
+              href="#contactus_section"
+              style="text-decoration: none; color: #333; margin: 0 10px"
+              >Contact</a
+            >
+          </li>
+        </ul>
+        <img
+          src="images/icon/menu.png"
+          class="menu"
+          onclick="sideMenu(0)"
+          alt="menu"
+          style="height: 30px; width: 30px; cursor: pointer"
+        />
+      </nav>
+    </header>
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-container">
+        <div class="left-col">
+          <div class="logo"></div>
+
+          <br /><br />
+          <p class="rights-text">
+            Copyright © 2024 Created By DTL Team, RVCE Students All Rights
+            Reserved.
+          </p>
+          <br />
+          <p>
+            <img src="images/icon/location.png" /> RV College of Engeneering<br />Banglore,
+            Karnataka-560060
+          </p>
+          <br />
+          <p>
+            <img src="images/icon/phone.png" /> +91-9441450879<br /><img
+              src="images/icon/mail.png"
+            />&nbsp; rishikeshreddy887@gmail.com
+          </p>
+        </div>
+        <div class="right-col">
+          <h1 style="color: #fff">Our Updates</h1>
+          <div class="border"></div>
+          <br />
+          <p>Enter Your Email to get our updates fastly.</p>
+          <form class="newsletter-form">
+            <input class="txtb" type="email" placeholder="Enter Your Email" />
+            <input class="btn" type="submit" value="Submit" />
+          </form>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
